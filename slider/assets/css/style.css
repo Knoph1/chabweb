@@ -1,0 +1,199 @@
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap"); */
+body {
+  /* font-family: "Poppins", sans-serif; */
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #5c5c5c;
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Muli", sans-serif;
+}
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+.custom-btn2 {
+  display: inline-block;
+  background-color: #e70323;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 12px 35px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-btn2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #504e4f;
+  width: 4px;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.custom-btn2:hover {
+  color: #ffff;
+}
+
+.custom-btn2:hover::before {
+  width: 100%;
+}
+/*
+ Slider Style
+==============================*/
+.main-slider .single-slider-item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.main-slider .single-slider-item::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-slider .single-slider-item.item-bg-one {
+  background-image: url("../img/slider-1.jpg");
+}
+
+.main-slider .single-slider-item.item-bg-two {
+  background-image: url("../img/slider-2.jpg");
+}
+
+.main-slider .single-slider-item.item-bg-three {
+  background-image: url("../img/slider-3.jpg");
+}
+
+.main-slider .single-slider-item .slider-text {
+  position: relative;
+  max-width: 620px;
+  margin-top: -70px;
+}
+
+.main-slider .single-slider-item .slider-text h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.main-slider .single-slider-item .slider-text p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.main-slider .single-slider-item .slider-text .slider-button {
+  margin-top: 28px;
+}
+
+.main-slider .single-slider-item .slider-text .slider-button a.custom-btn2 {
+  z-index: 1;
+}
+
+.main-slider .single-slider-item .slider-text .slider-button a.custom-btn2::before {
+  background: white;
+}
+
+.main-slider .single-slider-item .slider-text .slider-button a.custom-btn2:hover {
+  color: #e70323;
+}
+
+.main-slider .single-slider-item .slider-text .slider-button a.custom-btn2:hover::before {
+  width: 100%;
+}
+
+.main-slider.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 9%;
+  right: 0;
+  color: #ffff;
+  max-width: 1110px;
+  left: 0;
+  margin: auto;
+  text-align: right;
+}
+
+.main-slider.owl-carousel .owl-nav button.owl-next {
+  font-size: 40px;
+  border: 2px solid #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 42px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.main-slider.owl-carousel .owl-nav button.owl-next:hover {
+  background: #e70323;
+  color: #ffffff;
+  border: 1px solid #e70323;
+}
+
+.main-slider.owl-carousel .owl-nav button.owl-next i {
+  padding-left: 3px;
+}
+
+.main-slider.owl-carousel .owl-nav button.owl-prev {
+  margin-right: 15px;
+  font-size: 40px;
+  border: 2px solid #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.main-slider.owl-carousel .owl-nav button.owl-prev i {
+  padding-right: 3px;
+}
+
+.main-slider.owl-carousel .owl-nav button.owl-prev:hover {
+  background: #e70323;
+  color: #ffffff;
+  border: 1px solid #e70323;
+}

@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('images/hero page/7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vh;
+}
+header{
+    color:rgb(184, 179, 179);
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#iconbar{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+#iconbar:hover{
+    color: teal;
+}
+.logo{
+margin-left: 60px;
+margin-top: 50px;
+
+}
+.logo img{
+    height: 7vh;
+}
+.logo h3{
+    color:rgb(18, 241, 241);
+    font-size: 25px;
+    margin-top: -35px;
+
+    margin-left: 50px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: rgb(227, 238, 227);
+}
+.nav ul li a:hover{
+    color: teal;
+    font-weight: bolder;
+}
+.user{
+    cursor:pointer;
+    color:teal;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.user a{
+    padding: 10px 30px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.user a:hover{
+    background-color: black;
+    color: teal;
+}
+.user i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.user h4{
+    border-radius: 40px;
+    background: teal;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.user i{
+    padding: 0px 14px;
+}
+.user h4:hover{
+    color:teal;
+    background: black;
+}
+
+
+.heropage{
+    position: absolute;
+    color:white;
+   margin-top: 100px;
+   margin-left: 100px;
+}
+.inside-heropage{
+    line-height:2;
+}
+.inside-heropage h1{
+    font-size: 40px;
+}
+.inside-heropage p{
+    font-size: 17px;
+}
+span{
+    color: teal;
+    font-weight: bold;
+
+}
+.line1{
+height: 2px;
+background-color:rgb(18, 241, 241);
+width: 12%;
+margin-left: 0px;
+margin-top: 0px;
+position: absolute;
+}
+
+.btn1{
+    margin-top: 30px;
+}
+.btn1 a{
+    background-color: teal;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.btn1 a:hover{
+    background: black;
+    color: teal;
+}
+
+.btn1 i{
+    color:black;
+    padding: 0px 10px;
+}
+.btn1 i:hover{
+    color: white;
+}
+.poster{
+    margin-top: 130px;
+    margin-right: 150px;
+}
+.poster img{
+    height:320px;
+    float: right;
+    border-radius: 10px;
+}
+.latest-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    margin-top: 500px;
+    padding: 0px 20px;
+}
+.latest-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+    
+}
+.latest-container{
+    padding: 10px 0px;
+}
+.latest-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest-inside img{
+    height: 122px;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 500ms ease-in-out;
+}
+.latest-inside img:hover{
+    transform: scale(1.2);
+}
+.heading1{
+    color: white;
+    line-height: 1.5;
+}
+.heading1 h4{
+    font-size: 15px;
+}
+.heading1 h6{
+    font-size: 12px;
+}
+.btn2{
+    margin-top: -30px;
+    margin-left: 150px;
+}
+.btn2 a{
+    font-size: 13px;
+    text-decoration: none;
+    background: teal;
+    padding: 7px 7px;
+    border-radius: 10%;
+    color: white;
+
+}
+.hollywood-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 850px;
+}
+.hollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.hollywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hollywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.hollywood-inside img{
+   height: 250px;
+   border-radius: 10px;
+   transition: all 500ms ease-in-out;
+}
+.hollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.imdb{
+    background: teal;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+.more1{
+position: absolute;
+ margin-top: 860px;
+ margin-left: 1220px;
+}
+.more1 a{
+
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+.tollywood-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1300px;
+}
+.tollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.tollywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tollywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.tollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.tollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.imdb{
+    background: teal;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+
+.collywood-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1750px;
+}
+.collywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.collywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.collywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.collywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.collywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.imdb{
+    background: teal;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+.more3{
+    position: absolute;
+    margin-top: 1300px;
+    margin-left: 1220px;
+}
+.more3 a{
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.tollywood-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1300px;
+}
+.tollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.tollywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tollywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+}
+.tollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.tollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.imdb{
+    background: teal;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+.more2{
+    position: absolute;
+ margin-top: 1730px;
+ margin-left: 1220px;
+}
+.more2 a{
+   color: teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.iollywood-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 2200px;
+}
+.iollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.iollywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iollywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+}
+.iollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.iollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.imdb{
+    background: teal;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+.more4{
+    position: absolute;
+ margin-top: 2200px;
+ margin-left: 1220px;
+}
+.more4 a{
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.sollywood-movies{
+    position: absolute;
+    width:100%;
+    height: 75%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 2650px;
+}
+.sollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.sollywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sollywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.sollywood-inside img{
+   height: 250px;
+   border-radius: 10px;
+   transition: all 500ms ease-in-out;
+}
+.sollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.imdb{
+    background: teal;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+.more5{
+position: absolute;
+ margin-top: 860px;
+ margin-left: 1220px;
+}
+.more5 a{
+
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.akira{
+
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    color: white;
+    margin-top: 3100px;
+}
+.yt-movies{
+    padding: 10px 170px;
+    line-height: 1.9;
+}
+.yt-movies h1{
+    color:rgb(18, 241, 241);
+}
+.yt-movies p{
+    font-size: 25px;
+}
+.line{
+    height: 2px;
+    background-color: white;
+    width: 7%;
+    margin-left: 170px;
+    position: absolute;
+}
+.yt-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inside-yt img{
+    padding: 10px 0px;
+    height: 350px;
+    border-radius: 50px;
+}
+.heading2 p{
+    font-size: 15px;   
+}
+.like{
+    font-size: 15px;
+    float: right;
+    margin-top: -56px;
+}
+.youtubebtn{
+    position:absolute;
+    height:30%;
+    background-color: black;
+    width: 100%;
+    margin-top: 3700px;
+    text-align: center;
+}
+.youtubebtn a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background: teal;
+    color: black;
+    font-weight: 700;
+    border-radius: 40px;
+}
+.youtubebtn i{
+    padding:0px 4px;
+    font-size: 19px;
+}
+.footer{
+    position: absolute;
+    margin-top: 3860px;
+    height: 20vh;
+    color: white;
+    background:#141414;
+    width: 100%;
+}
+
+.logopart img{
+    height:7vh;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.logopart h1{
+    color:rgb(18, 241, 241);
+font-size: 25px;
+margin-top: 40px;
+margin-left: 120px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.socials i{
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 0px 4px;
+    color: rgb(18, 241, 241);
+}
+.btn4{
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.btn4 a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: black;
+    background: teal;
+    border-radius: 30px;
+}
+
+.scroll{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: teal;
+    border-radius: 50px;
+    bottom: 100px;
+    right: 50px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+}
+.scroll i{
+    color: black;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+.hamburger:focus{
+    outline: none;
+}
+
+@media(max-width:360px)
+{
+    .nav ul{
+        display: none;
+    }
+    .hamburger {
+        display: block; 
+    }
+
+
+}
